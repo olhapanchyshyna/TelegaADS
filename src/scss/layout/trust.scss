@@ -1,0 +1,113 @@
+.trust{
+    .container{
+        margin-bottom: 170px;
+        max-width: 1020px;
+        width: 100%;
+    }
+    &-title{
+        color: #7044CC;
+        font-size: 55px;
+        line-height: 55px;
+        max-width: 280px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 75px;
+    }
+    &-list{
+        max-width: 1020px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        position: relative;
+        flex-wrap: wrap;
+        &-item{
+            max-width: 225px;
+            width: 100%;
+            border: 1px solid black;
+            min-height: 145px;
+            border-radius: 20px;
+        }
+    }
+    .google, .yandex, .mastercard, .visa{
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .google{
+        background-image: url(../img/trust/trust-img-googl.png);  
+    }
+    .yandex{
+        background-image: url(../img/trust/trust-img-yandex.png);
+    }
+    .visa{
+        background-image: url(../img/trust/trust-img-visa.png);
+    }
+    .mastercard{
+        background-image: url(../img/trust/trust-img-mastercard.png);
+    }
+    .slider__indicators{
+        display: none
+    }
+}
+@media screen and (max-width: 900px){
+    .trust{
+        &-list{
+            flex-wrap: wrap;
+        }
+        .google, .yandex, .mastercard, .visa{
+            margin: auto;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (max-width: 790px){
+    .trust{
+        position: relative;
+        .container{
+            margin-bottom: 220px;
+        }
+        &__wrapper{
+            margin: auto;
+            max-width: 255px;
+            width: 100%;
+        }
+        &-list{
+            &-item{
+                max-width: 255px;
+                width: 100%;
+            }
+        }
+        &-title{
+            font-size: 35px;
+            line-height: 35px;
+        }
+        .slider{
+            &__counter{
+                margin-top: 70px;
+                position: absolute;
+                max-width: 225px;
+                width: 100%;
+                
+            }
+            &__indicators{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                // padding-left: 0;
+                margin: auto;
+            }
+        }
+        .dot{
+            list-style: none;
+            font-size: 50px;
+            background-color: $mainColor;
+            width: 20px;
+            border-radius: 50%;
+            height: 20px;
+            cursor: pointer;
+            opacity: 0.5;
+        }            
+    }
+}

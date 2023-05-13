@@ -1,0 +1,112 @@
+.form-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4; 
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(116 116 116 / 55%) 
+}
+.form-container-authorization{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4; 
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(116 116 116 / 55%) 
+}
+.form{
+    max-width: 693px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 126px 96px 165px;
+    border-radius: 16px;
+    filter: drop-shadow(3px 3px 38px rgba(0, 0, 0, 0.48));
+}
+.form-content{
+    max-width: 450px;
+    margin: auto;
+    border-radius: 16px;
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.form-close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #0000008c;
+    opacity: .5;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #EBEDF2;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.form-title{
+    font-size: 35px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.form-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.form-questions{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    font-size: 18px;
+    color: #000000;
+    border: 1px solid black;
+    /* opacity: .5; */
+    /* font-weight: 700; */
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 10px;
+}
+label{
+    color: #7044CC;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 36px;
+    border: 1px solid #7044CC;
+    border-radius: 12px;
+    padding: 26px 0 26px 40px;
+}
+.form-button{
+    background-color: #7044CC;
+    border: 1px solid #7044CC;
+    border-radius: 12px;
+    padding-top: 26px ;
+    padding-bottom: 26px;
+    max-width: 501px;
+    width: 100%;
+    color: white
+}
+.form-link{
+    text-align: center;
+    margin: 25px auto;
+    border-bottom: 1px solid black;
+    max-width: 100px;
+    cursor: pointer;
+}
+/* ------------------------------- */

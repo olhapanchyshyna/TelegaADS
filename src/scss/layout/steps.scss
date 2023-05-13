@@ -1,0 +1,95 @@
+.steps{
+    margin-bottom: 150px;
+    .container{
+        max-width: 980px;
+        width: 100%;
+    }
+    // &__wrapper{
+    //     display: grid;
+    // }
+    &-list{
+        display: grid;
+        justify-content: space-between;
+        margin-bottom: 135px;
+        grid-template-columns: minmax(280px, 300px) minmax(350px, 420px);
+        grid-template-rows: repeat(3, minmax(350px auto));
+        
+       
+        &-item{
+            &-left{
+                &-icon{
+                    margin-bottom: 26px;
+                    &-number{
+                        margin-right: 25px;
+                    }
+                }
+                &-title{
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+            }
+            &-right{
+                &-text{
+                    color: #677488;
+                    font-size: 17px;
+                    line-height: 27px;
+                    margin-bottom: 31px;
+                    width: 100%;
+                    &-cards{
+                        font-size: 17px;
+                        line-height: 27px;
+                        margin-bottom: 50px;
+                    }
+                }
+                &-button button{
+                    padding: 7px 35px;
+                    background-color: #7044CC;
+                    color: white;
+                    border-radius: 100px;
+                    border: 1px solid #7044CC;
+                    font-size: 15px;
+                }
+                &-logo-mastercard{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+}
+.gray {
+    .step-list-item-righ-text{
+        max-width: 250px;
+    }
+    .step-list-item-left-title{
+        max-width: 250px;
+    }
+    .step-list-item-left{
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .steps{
+        &-list{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+@media screen and (max-width: 790px){
+    .steps{
+        &-list{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-bottom: 160px;
+            &-gray{
+                flex-direction: column-reverse;
+            }
+            &-item-left-title{
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

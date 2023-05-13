@@ -1,0 +1,119 @@
+.questions{
+    margin-bottom: 195px !important;
+    .container{
+        max-width: 1424px;
+        width: 100%;
+        display: flex;
+        min-height: 626px;
+    }
+    &-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        max-width: 712px;
+        width: 100%;
+        background: url("../img/questions/questions-left-bg.png");
+        background-repeat: no-repeat;
+        &-title{
+            font-size: 55px;
+            line-height: 62px;
+            max-width: 250px;
+            width: 100%;   
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        &-text{
+            font-size: 18px;
+            line-height: 34px;
+            max-width: 250px;
+            width: 100%; 
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &-right{
+        max-width: 712px;
+        width: 100%;
+        background-color: #EEF4FD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-list{
+            border: 1px solid #A5A5A5;
+            max-width: 470px;
+            width: 100%;
+            min-height: 100px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: relative;
+            &-text{
+                font-size: 14px;
+                display: flex   ;
+                justify-content: center;
+                align-items: center;
+                margin-left: -50px;
+            }
+            &-icon {
+                background-repeat: no-repeat; 
+                max-width: 80px;
+                width: 100%;
+                min-height: 80px;
+                position: absolute;
+                right: 10px;
+            
+            }
+        }
+    }
+    .fb{
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' fill='%237044CC'/%3E%3Cpath d='M48.9062 31.4062H33.0938C32.7135 31.4062 32.4062 31.7135 32.4062 32.0938V47.9062C32.4062 48.2865 32.7135 48.5938 33.0938 48.5938H48.9062C49.2865 48.5938 49.5938 48.2865 49.5938 47.9062V32.0938C49.5938 31.7135 49.2865 31.4062 48.9062 31.4062ZM46.9211 36.4229H45.5482C44.4719 36.4229 44.2635 36.9342 44.2635 37.6861V39.3426H46.833L46.4979 41.9357H44.2635V48.5938H41.5844V41.9379H39.3436V39.3426H41.5844V37.4305C41.5844 35.2111 42.94 34.0016 44.9209 34.0016C45.8705 34.0016 46.6848 34.0725 46.9232 34.1047V36.4229H46.9211Z' fill='white'/%3E%3C/svg%3E");
+    }
+    .tg{
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' fill='%237044CC'/%3E%3Cpath d='M49.6651 31.7168L31.9351 38.5538C30.7251 39.0398 30.7321 39.7148 31.7131 40.0158L36.2651 41.4358L46.7971 34.7908C47.2951 34.4878 47.7501 34.6508 47.3761 34.9828L38.8431 42.6838H38.8411L38.8431 42.6848L38.5291 47.3768C38.9891 47.3768 39.1921 47.1658 39.4501 46.9168L41.6611 44.7668L46.2601 48.1638C47.1081 48.6308 47.7171 48.3908 47.9281 47.3788L50.9471 33.1508C51.2561 31.9118 50.4741 31.3508 49.6651 31.7168Z' fill='white'/%3E%3C/svg%3E");
+    }
+    .wk{
+        background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' fill='%237044CC'/%3E%3Cpath d='M51.3773 34.4259C51.529 33.9222 51.3773 33.5527 50.6602 33.5527H48.2844C47.6799 33.5527 47.4037 33.8723 47.252 34.2233C47.252 34.2233 46.0441 37.1689 44.3324 39.0788C43.7799 39.6346 43.5275 39.8101 43.2263 39.8101C43.0757 39.8101 42.8569 39.6346 42.8569 39.1308V34.4259C42.8569 33.8214 42.6825 33.5527 42.1787 33.5527H38.4456C38.0686 33.5527 37.8411 33.8322 37.8411 34.0987C37.8411 34.6707 38.6969 34.8029 38.7847 36.4149V39.9119C38.7847 40.6778 38.6471 40.8176 38.3437 40.8176C37.5388 40.8176 35.5802 37.8612 34.4177 34.4768C34.1913 33.8192 33.9627 33.5538 33.3561 33.5538H30.9814C30.3022 33.5538 30.1667 33.8734 30.1667 34.2244C30.1667 34.8549 30.9717 37.9749 33.9162 42.1013C35.8792 44.9191 38.6427 46.4466 41.1604 46.4466C42.6695 46.4466 42.8558 46.1075 42.8558 45.5225V43.3927C42.8558 42.7145 42.9999 42.578 43.4777 42.578C43.8287 42.578 44.4332 42.7557 45.8426 44.1131C47.4524 45.7229 47.7189 46.4455 48.6235 46.4455H50.9982C51.6763 46.4455 52.0154 46.1064 51.8204 45.4369C51.607 44.7707 50.8378 43.8011 49.8173 42.6538C49.2627 41.9995 48.4339 41.2953 48.1815 40.9432C47.8294 40.4893 47.9312 40.2889 48.1815 39.8859C48.1826 39.887 51.0762 35.8115 51.3773 34.4259Z' fill='white'/%3E%3C/svg%3E");
+    }
+}
+
+@media screen and (max-width: 1500px){
+    .questions{
+        .container{
+            flex-direction: column;
+            margin: auto;
+            max-width: 870px;
+        }
+        &-right, &-left
+        {
+            max-width: 710px;
+            width: 100%;
+            margin: auto;
+        }
+        &-left{
+            margin-bottom: 15px;
+            min-height: 400px;
+        }
+        &-right{
+            padding: 150px 0;
+        }
+
+    }
+}  
+@media screen and (max-width: 790px){
+    .questions{
+        margin-bottom: 80px !important;
+        &-right{
+            background-color: white;
+            padding: 30px 0;
+            &-list{
+                max-width: 350px;
+                width: 100%;
+            }
+        }
+
+    } 
+}  

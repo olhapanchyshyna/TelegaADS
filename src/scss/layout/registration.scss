@@ -1,0 +1,67 @@
+.registration{
+    min-height: 400px;
+    max-width: 1600px;
+    width: 100%;
+    background-image: url("../img/registration/registrationBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 90px !important;
+    .container{
+        padding-top: 140px;
+        align-items: flex-start;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+    }
+    &-title{
+        color: white;
+        font-size: 55px;
+        line-height: 55px;
+    }
+    &-text{
+        font-size: 17px;
+        line-height: 27px;
+        color: white;
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 36px;
+    }
+    &-bt button{
+        background-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        border-radius: 100px;
+        padding: 10px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.3) ;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.408);
+            border: 1px solid rgb(189, 188, 188) ;
+        }       
+ 
+    }
+}
+@media screen and (max-width: 1080px){
+    .registration{
+        .container{
+            justify-content: space-around;
+        }
+        &-text{
+            margin-bottom: 20px ;
+        }
+    }
+}
+
+@media screen and (max-width: 790px){
+    .registration{
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        &-right{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,136 @@
+.navbar{
+    max-width: 1600px;
+    width: 100%;
+    margin-bottom: 100px;    
+    .container-fluid{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-nav{
+        display: flex;
+        max-width: 480px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &-collapse{
+        max-width: 900px;
+        width: 100%;
+        display: flex;  
+        z-index: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &-brand{
+        max-width: 140px;
+        width: 100%;
+    }
+    .nav
+        &-item{
+        color: black;
+        position: relative;
+        &-link{
+            &:hover{
+                color: #650DF0 !important;
+            }
+        }  
+    }
+    &-button button{
+        position: relative;
+        z-index: 1;
+        padding: 18px 35px;
+        background-color: #7044CC;
+        color: white; 
+        border-radius: 100px;
+        border: 1px solid #7044CC;
+        font-size: 15px; 
+        &:hover{
+            padding: 18px 35px;
+            background-color: #682ee4;
+            color: white;  
+        }
+    }
+    .button-user{
+        margin-left: 20px;
+    }
+    &__wrapper{
+        &_icon{
+            display: none;
+        }
+            
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .navbar{  
+        &-nav{
+            max-width: 440px;
+            width: 100%;
+        }
+        &-collapse{
+            max-width: 780px;
+            width: 100%;
+            display: flex;
+            z-index: 1;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }    
+}
+
+@media screen and (max-width: 1040px){
+    .navbar{  
+        .container-fluid{
+            flex-direction: column;
+            // margin: 0 20px;
+        }
+
+        &-brand{
+            margin-left: 20px;
+        }
+        &-nav{
+            max-width: 440px;
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        .nav{
+            &-link{
+                border-bottom : 2px solid $mainColor; 
+            }
+            &-item{
+                margin-bottom: 20px;
+            }
+        }
+        &-collapse{
+            max-width: 400px;
+            width: 100%;
+            flex-direction: column;           
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px auto;
+            flex-direction: column;
+        }
+        &__wrapper{
+            &_icon{
+                z-index: 5;
+                top: 40px;
+                right: 10px;
+                position: absolute;
+                display: flex;
+                width: 47px;
+                height: 47px;
+                background-color: #0000009c;
+                border-radius: 5px;
+                padding: 10px; 
+            }  
+        }
+        &__open, &__close{
+            color: #FFFFFF;
+            width: 25px;
+            height: 25px;
+            display: flex;
+        }
+    }    
+}
