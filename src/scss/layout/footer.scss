@@ -1,7 +1,6 @@
 .footer{
     margin-bottom: 170px!important;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 20px;
     &-links{
         display: flex;
         justify-content: space-between;
@@ -53,9 +52,9 @@
 
 @media screen and (max-width: 790px){
     .footer{
-        &-links, &-icon
-        {
+        &-links{
             flex-direction: column;
+            text-align: center;
         }
         &-links{
             &-navigation{
@@ -68,8 +67,18 @@
                 }
             }
         }
-        &-icon-link{
-            margin-bottom: 65px;
+        &-icon{
+            &-logo{
+                max-width: 100px;
+                img{
+                    width: 100%;
+                }
+            }
+            &-link{
+                font-size: 16px;    
+                line-height: 22px;
+            }
         }
+            
     }
 }

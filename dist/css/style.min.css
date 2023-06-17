@@ -1218,8 +1218,7 @@ body.lock {
 }
 .footer {
   margin-bottom: 170px !important;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding: 0 20px;
 }
 .footer-links {
   display: flex;
@@ -1270,8 +1269,9 @@ body.lock {
 }
 
 @media screen and (max-width: 790px) {
-  .footer-links, .footer-icon {
+  .footer-links {
     flex-direction: column;
+    text-align: center;
   }
   .footer-links-navigation {
     margin-bottom: 70px;
@@ -1280,8 +1280,15 @@ body.lock {
     font-size: 25px;
     line-height: 34px;
   }
+  .footer-icon-logo {
+    max-width: 100px;
+  }
+  .footer-icon-logo img {
+    width: 100%;
+  }
   .footer-icon-link {
-    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 .form-container {
@@ -1437,7 +1444,7 @@ input {
   color: black;
   position: relative;
 }
-.nav .navbar-item-link:hover {
+.nav .navbar-item-link a:hover {
   color: #650DF0 !important;
 }
 .navbar-button button {
@@ -1449,6 +1456,8 @@ input {
   border-radius: 100px;
   border: 1px solid #7044CC;
   font-size: 15px;
+  align-items: center;
+  display: flex;
 }
 .navbar-button button:hover {
   padding: 18px 35px;

@@ -30,7 +30,7 @@
         color: black;
         position: relative;
         &-link{
-            &:hover{
+            a:hover{
                 color: #650DF0 !important;
             }
         }  
@@ -44,6 +44,8 @@
         border-radius: 100px;
         border: 1px solid #7044CC;
         font-size: 15px; 
+        align-items: center;
+        display: flex;
         &:hover{
             padding: 18px 35px;
             background-color: #682ee4;
