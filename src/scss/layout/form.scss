@@ -48,9 +48,7 @@
     opacity: .5;
     font-weight: 700;
     border-radius: 50%;
-    background-color: #EBEDF2;
     cursor: pointer;
-    padding: 0 12px;
 }
 
 .form-title{
@@ -65,20 +63,6 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-}
-.form-questions{
-    position: absolute;
-    top: 50px;
-    right: 40px;
-    font-size: 18px;
-    color: #000000;
-    border: 1px solid black;
-    /* opacity: .5; */
-    /* font-weight: 700; */
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0 10px;
 }
 label{
     color: #7044CC;
